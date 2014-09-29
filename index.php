@@ -12,9 +12,9 @@
 <body>
 		<h1>xkcd Password Generator</h1>
 
-		<h2 class="password">PASSWORD RESULT</h2>
+		<h2 class="password"> <?php echo $password ?> </h2>
 
-		<form>
+		<form action='index.php' method='GET'>
 
 			<label for='numberWords'>How many words</label>
 			<input maxlength=1 type='text' name='numberWords' id='numberWords' value=' '>
