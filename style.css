@@ -1,17 +1,13 @@
 body {
 	padding: 0 1em 0 1em;
-	background-color: #E1F5FF;
 }
 
-img {
-	margin-left: 3em;
+.password {
+	color: #00FF00;
+	background-color: #E6E6E6;
+	display: inline-block;
+	padding: .5em;
+	border: 2px solid black;
 }
 
-h3 {
-	margin-left: 3em;
-}
 
-ul{
-	margin-left: 3em;
-	list-style-type: none;
-}
