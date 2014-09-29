@@ -1,0 +1,17 @@
+body {
+	padding: 0 1em 0 1em;
+	background-color: #E1F5FF;
+}
+
+img {
+	margin-left: 3em;
+}
+
+h3 {
+	margin-left: 3em;
+}
+
+ul{
+	margin-left: 3em;
+	list-style-type: none;
+}
