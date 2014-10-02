@@ -1,5 +1,7 @@
 <?php 
 
+error_reporting (0);
+
 $password = '';
 $words = Array();
 $numbers = Array();
@@ -44,8 +46,23 @@ $numbers[2] = '3';
 $numbers[3] = '4';
 $numbers[4] = '5';
 
-$number = $_GET["numberWords"];
 for ($i = 0; $i < $_GET["numberWords"]; $i++) {
-	$random = rand(0, 25);
-	$password .= '-'.$words[$random];
+	if ($i == 0) {
+		$random = rand(0, 25);
+		$password .= $words[$random];
+	}
+	else {
+		$random = rand(0, 25);
+		$password .= '-'.$words[$random];
+	}
+}
+
+if ( $_GET["includeNumber"] == 'on') {
+	$random = rand(0, 4);
+	$password .= $numbers[$random];
+}
+
+if ( $_GET["includeSymbol"] == 'on') {
+	$random = rand(0, 4);
+	$password .= $symbols[$random];
 }

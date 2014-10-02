@@ -17,7 +17,7 @@
 		<form action='index.php' method='GET'>
 
 			<label for='numberWords'>How many words</label>
-			<input maxlength=1 type='text' name='numberWords' id='numberWords' value=' '>
+			<input maxlength=1 type='text' name='numberWords' id='numberWords' value='' >
 			<br/>
 			<input type='checkbox' name='includeNumber' id='includeNumber'>
 			<label for='includeNumber'>Include a Number</label>
