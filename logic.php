@@ -7,6 +7,22 @@ $words = Array();
 $numbers = Array();
 $sybmols = Array();
 
+$numberHold = $_GET["numberWords"];
+
+if ( $_GET["includeNumber"] == 'on') {
+	$numberBoxHold = checked;
+}
+else {
+	$numberBoxHold = '';
+}
+
+if ( $_GET["includeSymbol"] == 'on') {
+	$symbolBoxHold = checked;
+}
+else {
+	$symbolBoxHold = '';
+}
+
 $words[0] = 'giraffe';
 $words[1] = 'coffee';
 $words[2] = 'bucket';
@@ -66,3 +82,4 @@ if ( $_GET["includeSymbol"] == 'on') {
 	$random = rand(0, 4);
 	$password .= $symbols[$random];
 }
+
