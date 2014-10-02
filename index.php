@@ -32,7 +32,7 @@
 		<a href="http://xkcd.com/936/">xkcd password concept original</a>
 		<br/>
 		<br/>
-		<img src="./xkcdPassword.png" alternate="xkcd Password Comic">
+		<img src="./xkcdPassword.png" alt="xkcd Password Comic">
 		
 </body>
 </html>

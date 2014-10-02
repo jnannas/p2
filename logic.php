@@ -62,14 +62,29 @@ $numbers[2] = '3';
 $numbers[3] = '4';
 $numbers[4] = '5';
 
-for ($i = 0; $i < $_GET["numberWords"]; $i++) {
-	if ($i == 0) {
-		$random = rand(0, 25);
-		$password .= $words[$random];
+if ($_GET["numberWords"] == '') {
+	for ($i = 0; $i < 4; $i++) {
+		if ($i == 0) {
+			$random = rand(0, 25);
+			$password .= $words[$random];
+		}
+		else {
+			$random = rand(0, 25);
+			$password .= '-'.$words[$random];
+		}
 	}
-	else {
-		$random = rand(0, 25);
-		$password .= '-'.$words[$random];
+}
+
+else {
+	for ($i = 0; $i < $_GET["numberWords"]; $i++) {
+		if ($i == 0) {
+			$random = rand(0, 25);
+			$password .= $words[$random];
+		}
+		else {
+			$random = rand(0, 25);
+			$password .= '-'.$words[$random];
+		}
 	}
 }
 
